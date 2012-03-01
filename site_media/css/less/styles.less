@@ -1,0 +1,282 @@
+@import "variables.less";
+@import "mixins.less";
+
+@baseLineHeight: 10px;
+
+body {
+  padding-top: 41px;
+  padding-bottom: 40px;
+  background: transparent url("../../layout/background/main_background-picture6.jpg") center top no-repeat;
+}
+
+#pr-main {
+    background: transparent url("../../layout/background/main_background.gif") repeat;
+}
+
+// pr included css
+
+/***************** COMMON ************************************/
+
+.row-margin-bottom {
+    margin-bottom: @baseLineHeight;
+}
+
+.row-margin-top {
+    margin-top: @baseLineHeight;
+}
+
+.row-margin-left {
+    margin-left: @baseLineHeight;
+}
+
+.row-margin-right {
+    margin-right: @baseLineHeight;
+}
+
+.row-margin-bottom-xl {
+    margin-bottom: @baseLineHeight *2;
+}
+
+.row-margin-top-xl {
+    margin-top: @baseLineHeight *2;
+}
+
+.row-margin-left-xl {
+    margin-left: @baseLineHeight *2;
+}
+
+.row-margin-right-xl {
+    margin-right: @baseLineHeight *2;
+}
+
+.row-padding-left {
+    padding-left: @baseLineHeight;
+}
+
+.pr-text-align-right {
+    text-align: right;
+}
+
+.debug {
+    background-color: @yellow;
+}
+
+.debug2 {
+    background-color: @pink;
+}
+
+.debug3 {
+    background-color: @orange;
+}
+
+/***************** HEADER ************************************/
+
+header {
+    background-color: @black;
+    height: 140px;
+    margin-bottom: 1px;
+    .opacity(80);
+}
+
+.nav {
+  margin-top: @baseLineHeight;
+  margin-bottom: @baseLineHeight;
+}
+
+#pr-menu {
+    background-color: @black;
+    .opacity(90);
+    /*margin-bottom: @baseLineHeight *2;*/
+    margin-bottom: 1px;
+}
+
+#pr-race-info {
+    
+}
+
+#pr-race-info > .container{
+    background-color: @black;
+    height: 106px;
+    font-size: @baseFontSize;
+}
+
+#pr-race-info {
+    [class*="span"] {
+        /*background-color: @black;*/
+    }
+}
+
+#pr-race-info .pr-race-info-left , #pr-race-info .pr-race-info-right {
+    margin: 10px 10px 0px 10px;
+    color: @white;
+}
+
+#pr-race-info .pr-race-info-left{
+    margin-right: 0px;
+}
+
+#pr-race-info .pr-race-info-left > ul {
+    margin: 0px;
+    font-size: 12px;
+}
+
+/***************** HIGHLIGHTS ************************************/
+
+#pr-highlights {
+    
+}
+
+#pr-highlights h3 {
+    background-color: @black;
+    border-top: 1px solid @gray;
+    padding: 4px 10px;
+    color: @white;
+}
+
+#pr-highlights .container{
+    background-color: @white;
+    height: 465px;
+}
+
+.pr-higlights-area {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: transparent url('../../layout/background/highlight_background.gif') repeat-x;
+}
+
+.pr-higlights-pictures {
+    width: 580px;
+}
+
+.pr-highlights-news-list li > a {
+    color: @white;
+    font-size: 14px;
+    &:hover {
+        color: @yellow;
+        text-decoration: none;
+    }
+}
+
+.pr-highlights-news-list li {
+    margin-bottom: 6px;
+}
+
+/***************** FOOTER ************************************/
+
+.footer {
+    /*background: transparent url("../../layout/background/main_background.gif") repeat;*/
+    background-color: @grayDark;
+}
+
+/***************** COUNTDOWN CSS ************************************/
+
+#t7_timer { 
+	width: 206px; 
+	height: 55px; 
+	position: relative;
+}
+
+#t7_timer_over { 
+	width: 206px; 
+	height: 55px; 
+	background-image: url('../images/Countdown-over.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	/*z-index: 700;*/
+	top: 0px;
+	left: 1px;
+	margin: 0px;
+	padding: : 0px;
+}
+
+
+#t7_vals {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_numbs {
+	font-size: 28px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	color: #c5c5c5;
+}
+
+#t7_y , #t7_d , #t7_h , #t7_m , #t7_s {
+	background-image: url(../images/Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 48px;
+	height:30px;
+	padding: 7px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+}
+#t7_d {
+	background-image: url(../images/Countdown2.png);
+}
+#t7_h {
+	background-image: url(../images/Countdown2.png);
+}
+#t7_m {
+	background-image: url(../images/Countdown2.png);
+	width: 47px;
+}
+#t7_s {
+	background-image: url(../images/Countdown2-nc.png);
+	width: 42px;
+}
+
+#t7_labels {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_labs {
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	color: #c5c5c5;
+}
+#t7_yl , #t7_dl , #t7_hl , #t7_ml , #t7_sl  {
+	float:left;
+	width: 51px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+
+#defaultCountdown { margin-left: 0px; text-align: center;}
+
+/***************** HIGHLIGHTS SLIDER ************************************/
+
+.panel-overlay h2 , .panel-overlay p{
+	margin: .5em 0;
+}
+
+.panel-overlay h2 {
+	font-size: 31px;
+	font-weight: normal;
+	color: rgb(117, 117, 117);
+	letter-spacing: -1px;
+	line-height: 110%;
+	margin: 0pt;
+	text-transform: lowercase;
+	font-family: 'arial black';
+}
+
+.panel a
+{
+	text-decoration: none;
+}
+
+.panel-overlay p {
+	line-height: 1.3em;
+	font-size: 14px;
+	background-color: #f00;
+}
+
+// pr included css

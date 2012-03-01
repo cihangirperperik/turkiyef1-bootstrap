@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="utf-8">
+    <title>Bootstrap 2, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="(c) 2012, İstanbul Bilgi Üniversitesi">
+    
+    <script src="site_media/js/less-1.2.2.min.js"></script>
+    <link href="site_media/css/less/bootstrap.less" rel="stylesheet/less">
+    
+    
+    <!-- Le styles -->
+    <link href="site_media/css/css/bootstrap.css" rel="stylesheet">
+    <link href="site_media/css/css/styles.css" rel="stylesheet">
+    <link href="site_media/css/css/mixins.css" rel="stylesheet">
+    
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!-- Le fav and touch icons --> 
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+</head>
+<body>
+
+    
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" data-toggle="modal" href="#myModal">üye girişi</a>
+                    <div class="modal" id="myModal">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal">×</a>
+                            <h3>Modal header</h3>
+                        </div>
+                        <div class="modal-body">
+                            <p>One fine body…</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn btn-primary">Save changes</a>
+                            <a href="#" class="btn">Close</a>
+                        </div>
+                    </div>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="#">iletişim</a></li>
+                        <li><a href="#">hakkımızda</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Link</a></li>
+                                <li class="divider"/>
+                                <li class="nav-header">Başlık</li>
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                          </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="inner">
+                <p class="pull-right"><img src="site_media/layout/other/turkiyef1_logo_2.png" alt="#" /></p>
+            </div>
+        </div>
+    </header>
+    
+    <section id="pr-menu">
+        <div class="container">
+            <div class="subnav">
+                <ul class="nav nav-pills">
+                    <li class="dropdown active"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Ana Sayfa</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">2012 Sezonu <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="#navs">Yarış Takvimi</a></li>
+                            <li><a href="#navbar">Sonuçlar</a></li>
+                            <li><a href="#breadcrumbs">Sonuçlar</a></li>
+                            <li><a href="#pagination">Pistler</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#labels">Takımlar</a></li>
+                    <li><a href="#typography">Pilotlar</a></li>
+                    <li><a href="#thumbnails">Haberler</a></li>
+                    <li><a href="#alerts">Köşe yazıları</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Multimedya <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="#navs">Foto galeri</a></li>
+                            <li><a href="#navbar">Video galeri</a></li>
+                        </ul>
+                    </li>
+                    <li class="pull-right"><a href="#misc">Ekstra</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pr-race-info">
+        <div class="container">
+            <div class="row row-margin-bottom">
+                <div class="span18">
+                    <div class="row">
+                        <div class="span9">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="pr-race-info-left">
+                                        <button href="#" class="btn btn-mini btn-inverse">Rapor</button>
+                                        <button href="#" class="btn btn-mini btn-inverse">Takvim</button>
+                                        <button href="#" class="btn btn-mini btn-inverse">Foto</button>
+                                        <button href="#" class="btn btn-mini btn-inverse">Video</button>
+                                    </div>
+                                </div>
+                                <div class="span5 row-margin-top">
+                                    <h4 class="pr-text-align-right"><span class="label label-important">Brezilya GP 2011</span></h4>
+                                    <div class="pr-race-info-left pull-right pr-text-align-right">
+                                        <ul class="unstyled">
+                                            <li>Mark Webber ( Red Bull ) <span class="label label-warning">1</span></li>
+                                            <li>Sebastian Vettel ( Red Bull ) <span class="label label-warning">2</span></li>
+                                            <li>Jenson Button ( McLaren ) <span class="label label-warning">3</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span9">
+                            <div class="row">
+                                <div class="span5 row-margin-top">
+                                    <span class="label label-success">Avustralya GP 2012</span>
+                                    <div id="defaultCountdown" class="row-margin-top"></div>
+                                </div>
+                                <div class="span4">
+                                    <div class="pr-race-info-right pull-right">
+                                        <button href="#" class="btn btn-mini btn-inverse">Rapor</button>
+                                        <button href="#" class="btn btn-mini btn-inverse">Takvim</button>
+                                        <button href="#" class="btn btn-mini btn-inverse">Foto</button>
+                                        <button href="#" class="btn btn-mini btn-inverse">Video</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pr-highlights">
+        <div class="container">
+            
+            <div class="row">
+                <div class="span18">
+                    <h3><i class="icon-search icon-white"></i> Manşetler</h3>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="span18" style="background: transparent url('site_media/layout/background/title-bg-black-full.png') top no-repeat;">
+                    
+                    <div class="pr-higlights-area">
+                        <div class="row">
+                            <div class="span10">
+                                <div class="pr-higlights-pictures row-margin-left-xl row-margin-right-xl row-margin-top-xl row-margin-bottom-xl">
+                                    <div>
+                                        
+                                        <div id="photos" style="display: none;">
+                                            <div class="panel">
+                                                <a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]"><img src="site_media/images/news/highlights/1.jpg" alt="#" /></a>
+                                                <div class="panel-overlay">
+                                                    <h2><a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]">FIA 'burun' kuralını 2013 yılında yeniden düzenleyecek</a></h2>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel">
+                                                <a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]"><img src="site_media/images/news/highlights/1.jpg" alt="#" /></a>
+                                                <div class="panel-overlay">
+                                                    <h2><a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]">[newsTitle2]</a></h2>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel">
+                                                <a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]"><img src="site_media/images/news/highlights/1.jpg" alt="#" /></a>
+                                                <div class="panel-overlay">
+                                                    <h2><a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]">[newsTitle2]</a></h2>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel">
+                                                <a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]"><img src="site_media/images/news/highlights/1.jpg" alt="#" /></a>
+                                                <div class="panel-overlay">
+                                                    <h2><a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]">[newsTitle2]</a></h2>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel">
+                                                <a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]"><img src="site_media/images/news/highlights/1.jpg" alt="#" /></a>
+                                                <div class="panel-overlay">
+                                                    <h2><a href="/haberler/[newsID]/[newsTitle@1].html" title="[newsTitle@2]">[newsTitle2]</a></h2>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="pr-highlights-thumbnails">
+                                                <ul class="filmstrip">
+                                                    <li><img src="site_media/images/news/small/1.jpg" alt="#" /></li>
+                                                    <li><img src="site_media/images/news/small/1.jpg" alt="#" /></li>
+                                                    <li><img src="site_media/images/news/small/1.jpg" alt="#" /></li>
+                                                    <li><img src="site_media/images/news/small/1.jpg" alt="#" /></li>
+                                                    <li><img src="site_media/images/news/small/1.jpg" alt="#" /></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="span7 row-margin-top-xl" style="margin-left: 50px;">
+                                <ul class="pr-highlights-news-list unstyled">
+                                    <li><a href="#">Alonso: Şampiyon olamasamda başım dik ayrılır ...</a></li>
+                                    <li><a href="#">Ferrari ve RBR test programını değiştirmek zo ...</a></li>
+                                    <li><a href="#">Kenseth ikinci Daytona 500 zaferini elde etti</a></li>
+                                    <li><a href="#">McLaren şampiyonluk için yarışacak</a></li>
+                                    <li><a href="#">Marussia son kaza testini geçemedi</a></li>
+                                    <li><a href="#">Alonso: Hazırlıklar konusunda rahatız</a></li>
+                                    <li><a href="#">Webber: Beni kendi performansım ilgilendirirv</li>
+                                    <li><a href="#">Williams çifti 'akıl hocalarından' ...</a></li>
+                                    <li><a href="#">Fernley: Force India gelecek için yönünü beli ...</a></li>
+                                    <li><a href="#">FIA'nın son kısıtlamalarına Mercedes seb ...</a></li>
+                                    <li><a href="#">Brawn, Schumacher haberlerini yalanladı</a></li>
+                                    <li><a href="#">Spor medyası Red Bull'un üstünlüğünü işa ...</a></li>
+                                    <li><a href="#">Coulthard: Kimi doğal bir yetenek</a></li>
+                                    <li><a href="#">Brawn: Rosberg F1'in en iyileri arasında</a></li>
+                                    <li><a href="#">Prost: Yeni takımların başarılı olması imkans ...</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pr-main">
+
+        <div class="container">
+        
+            <div class="pr-hopmepage">
+                <div class="row row-margin-bottom-xl">
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1">1</div>
+                    <div class="span1 debug">2</div>
+                    <div class="span1 debug">2</div>
+                </div>
+                <hr/>
+                <div class="row row-margin-bottom">
+                    <div class="span4 debug">4</div>
+                    <div class="span4 debug2">4</div>
+                    <div class="span4 debug3">4</div>
+                    <div class="span6 debug3">4</div>
+                </div>
+                <hr/>
+                <div class="row row-margin-bottom">
+                    <div class="span10 debug">8</div>
+                    <div class="span8 debug2">4</div>
+                </div>
+            </div>
+        
+        </div>
+    
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-right"><a href="#">Başa dön</a></p>
+            <ul class="unstyled">
+                <li><a href="">link</a></li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </div>
+    </footer>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="site_media/js/jquery.js"></script>
+    <script src="site_media/js/jquery.galleryview-1.1.js"></script>
+    <script src="site_media/js/jquery.timers-1.1.2.js"></script>
+    <script src="site_media/js/jquery.countdown.js"></script>
+    <script src="site_media/js/bootstrap.min.js"></script>
+    <script src="site_media/js/bootstrap-modal.js"></script>
+    <script src="site_media/js/common.js"></script>
+
+</body>
+</html>
