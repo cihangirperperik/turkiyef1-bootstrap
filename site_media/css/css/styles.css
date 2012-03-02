@@ -126,6 +126,47 @@ header {
 .pr-highlights-news-list li {
   margin-bottom: 6px;
 }
+/***************** SECTION pr-main ***************************/
+.pr-main-spot-news-box {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.pr-main-spot-news-box-header {
+  background-color: #000;
+  height: 25px;
+  margin: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.pr-main-spot-news-box h5 {
+  color: #c3325f;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.pr-main-spot-news-box h5 > span {
+  background: transparent url("../../layout/icon/comment_box_small.png") no-repeat;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  color: #ffffff;
+}
+.pr-main-news-list li {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  color: #c3325f;
+  font-size: 10px;
+}
+.pr-main-news-list li  > a {
+  font-size: 13px;
+}
 /***************** FOOTER ************************************/
 .footer {
   /*background: transparent url("../../layout/background/main_background.gif") repeat;*/

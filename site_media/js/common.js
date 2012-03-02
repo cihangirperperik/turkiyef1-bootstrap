@@ -33,7 +33,7 @@ $(document).ready(function(){
         });
     };
     
-    $('#myModal').on('hidden', function () {
-        
-    })
+    // $('#myModal').on('hidden', function () {
+    //         
+    //     })
 });
