@@ -49,12 +49,51 @@ body {
     margin-right: @baseLineHeight *2;
 }
 
+.row-padding-top {
+    padding-top: @baseLineHeight;
+}
+
+.row-padding-bottom {
+    padding-bottom: @baseLineHeight;
+}
+
 .row-padding-left {
     padding-left: @baseLineHeight;
 }
 
+.row-padding-right {
+    padding-right: @baseLineHeight;
+}
+
+.row-padding-top-xl {
+    padding-top: @baseLineHeight *2;
+}
+
+.row-padding-bottom-xl {
+    padding-bottom: @baseLineHeight *2;
+}
+
+.row-padding-left-xl {
+    padding-left: @baseLineHeight *2;
+}
+
+.row-padding-right-xl {
+    padding-right: @baseLineHeight *2;
+}
+
 .pr-text-align-right {
     text-align: right;
+}
+
+.pr-title-row {
+    background-color: @black;
+    padding: 4px 10px;
+    color: @white;
+    
+}
+
+.pr-gradient {
+    #gradient > .vertical(@white, darken(@grayLighter, 20%));
 }
 
 .debug {
@@ -206,6 +245,10 @@ header {
     & > a {
         font-size: 13px;
     }
+}
+
+.pr-home-page-gallery > .span3 {
+    width: 150px;
 }
 
 /***************** FOOTER ************************************/

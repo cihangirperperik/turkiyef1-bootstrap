@@ -2281,13 +2281,17 @@ button.btn.small, input[type="submit"].btn.small {
   padding-bottom: 8px;
   margin-top: 2px;
   margin-bottom: 2px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #ffffff;
+}
+.nav-pills > li > a:hover {
+  color: #555555;
 }
 .nav-pills .active > a, .nav-pills .active > a:hover {
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #555555;
 }
 .nav-stacked > li {
   float: none;
@@ -2877,7 +2881,7 @@ button.btn.small, input[type="submit"].btn.small {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 1020;
   background-color: #000000;
 }
 .modal-backdrop.fade {

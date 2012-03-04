@@ -4,24 +4,21 @@
     
     
     <meta charset="utf-8">
-    <title>Bootstrap 2, from Twitter</title>
+    <title>TurkiyeF1 Bootstrap 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <meta name="copyright" content="(c) 2012, İstanbul Bilgi Üniversitesi">
+    <meta name="copyright" content="Etap Medya">
     
     <script src="site_media/js/less-1.2.2.min.js"></script>
     <link href="site_media/css/less/bootstrap.less" rel="stylesheet/less">
-    
     
     <!-- Le styles -->
     <link href="site_media/css/css/bootstrap.css" rel="stylesheet">
     <link href="site_media/css/css/responsive.css" rel="stylesheet">
     <link href="site_media/css/css/styles.css" rel="stylesheet">
 
-    
-    
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,19 +42,26 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a class="brand" data-toggle="modal" href="#myModal">üye girişi</a>
-                    <!--div class="modal" id="myModal">
+                    <div id="myModal" class="modal hide fade">
                         <div class="modal-header">
-                            <a class="close" data-dismiss="modal">×</a>
-                            <h3>Modal header</h3>
+                            <a class="close" data-dismiss="modal" >&times;</a>
+                            <h3>Modal Heading</h3>
                         </div>
                         <div class="modal-body">
-                            <p>One fine body…</p>
+                            <h4>Text in a modal</h4>
+                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+
+                            <h4>Popover in a modal</h4>
+                            <p>This <a href="#" class="btn popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on hover.</p>
+
+                            <h4>Tooltips in a modal</h4>
+                            <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
                         </div>
                         <div class="modal-footer">
                             <a href="#" class="btn btn-primary">Save changes</a>
-                            <a href="#" class="btn">Close</a>
+                            <a href="#" class="btn" data-dismiss="modal" >Close</a>
                         </div>
-                    </div-->
+                    </div>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li><a href="#">iletişim</a></li>
@@ -330,15 +334,52 @@
                     </div>
                 </div>
                 
-                <hr/>
-                <div class="row row-margin-bottom">
-                    <div class="span2 debug">2</div>
-                    <div class="span2 debug2">2</div>
-                    <div class="span2 debug3">2</div>
-                    <div class="span6 debug3">6</div>
-                    <div class="span4 debug3">4</div>
-                    <div class="span2 debug">2</div>
+                <div class="row row-margin-top-xl">
+                    <div class="span18" style="background: transparent url('site_media/layout/background/title-bg-black-full.png') left 30px no-repeat;">
+                        <p class="pr-main-spot-news-box-header">FOTO GALERİ</p>
+                        <div class="row-margin-left row-margin-right row-padding-top pr-gradient">
+                            <ul class="thumbnails row-padding-left-xl pr-home-page-gallery">
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img src="site_media/images/news/highlights/1.jpg" alt="#" />
+                                        <div class="caption">
+                                            <h5><i class="icon-camera"></i> Barcelona testleri</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img src="site_media/images/news/highlights/1.jpg" alt="#" />
+                                        <div class="caption">
+                                            <h5><i class="icon-camera"></i> Avustralya Grand Prix 2012</h5>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img src="site_media/images/news/highlights/1.jpg" alt="#" />
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img src="site_media/images/news/highlights/1.jpg" alt="#" />
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img src="site_media/images/news/highlights/1.jpg" alt="#" />
+                                    </a>
+                                </li>
+                                <li class="span3">
+                                    <a class="thumbnail" href="#">
+                                        <img src="site_media/images/news/highlights/1.jpg" alt="#" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                
                 <hr/>
                 <div class="row row-margin-bottom">
                     <div class="span16 debug">16</div>
@@ -384,13 +425,15 @@
             </ul>
         </div>
     </footer>
-    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    
     <script src="site_media/js/jquery.js"></script>
     <script src="site_media/js/jquery.galleryview-1.1.js"></script>
     <script src="site_media/js/jquery.timers-1.1.2.js"></script>
     <script src="site_media/js/jquery.countdown.js"></script>
-    <script src="site_media/js/bootstrap.min.js"></script>
+    <!--script src="site_media/js/bootstrap.min.js"></script-->
+    <script src="site_media/js/bootstrap-transition.js"></script>
     <script src="site_media/js/bootstrap-modal.js"></script>
+    <script src="site_media/js/bootstrap-dropdown.js"></script>
     <script src="site_media/js/common.js"></script>
 
 </body>

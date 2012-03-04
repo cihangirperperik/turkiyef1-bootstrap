@@ -41,11 +41,48 @@ body {
 .row-margin-right-xl {
   margin-right: 20px;
 }
+.row-padding-top {
+  padding-top: 10px;
+}
+.row-padding-bottom {
+  padding-bottom: 10px;
+}
 .row-padding-left {
   padding-left: 10px;
 }
+.row-padding-right {
+  padding-right: 10px;
+}
+.row-padding-top-xl {
+  padding-top: 20px;
+}
+.row-padding-bottom-xl {
+  padding-bottom: 20px;
+}
+.row-padding-left-xl {
+  padding-left: 20px;
+}
+.row-padding-right-xl {
+  padding-right: 20px;
+}
 .pr-text-align-right {
   text-align: right;
+}
+.pr-title-row {
+  background-color: #000000;
+  padding: 4px 10px;
+  color: #ffffff;
+}
+.pr-gradient {
+  background-color: #e4e4e4;
+  background-image: -moz-linear-gradient(top, #ffffff, #bbbbbb);
+  background-image: -ms-linear-gradient(top, #ffffff, #bbbbbb);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#bbbbbb));
+  background-image: -webkit-linear-gradient(top, #ffffff, #bbbbbb);
+  background-image: -o-linear-gradient(top, #ffffff, #bbbbbb);
+  background-image: linear-gradient(top, #ffffff, #bbbbbb);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bbbbbb', GradientType=0);
 }
 .debug {
   background-color: #ffc40d;
@@ -166,6 +203,9 @@ header {
 }
 .pr-main-news-list li  > a {
   font-size: 13px;
+}
+.pr-home-page-gallery > .span3 {
+  width: 150px;
 }
 /***************** FOOTER ************************************/
 .footer {
