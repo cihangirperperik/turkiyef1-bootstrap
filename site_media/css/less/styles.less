@@ -5,7 +5,6 @@
 
 body {
   padding-top: 41px;
-  padding-bottom: 40px;
   background: transparent url("../../layout/background/main_background-picture6.jpg") center top no-repeat;
 }
 
@@ -96,16 +95,28 @@ body {
     #gradient > .vertical(@white, darken(@grayLighter, 20%));
 }
 
-.debug {
-    background-color: @yellow;
+.pr-gradient-white {
+    #gradient > .vertical(@white, darken(@white, 20%));
 }
 
-.debug2 {
-    background-color: @pink;
+
+.pr-banner-300 {
+    background-color: #f00;
+    height: 250px;
+    width: 300px;
+    margin-left: 5px; //Ana sayfa için
 }
 
-.debug3 {
-    background-color: @orange;
+.pr-grayDarker {
+    background-color: @grayDarker;
+}
+
+.pr-grayDark {
+    background-color: @grayDark;
+}
+
+.pr-gray {
+    background-color: @gray;
 }
 
 /***************** HEADER ************************************/
@@ -220,7 +231,8 @@ header {
 
 .pr-main-spot-news-box h5 {
     color: @pink;
-    border-bottom: 1px solid @grayLighter;
+    border-bottom: 1px solid;
+    border-color: darken(@grayLighter, 10%);
     margin-bottom: 10px;
     margin-top: 10px;
     padding-bottom: 10px;
@@ -236,7 +248,15 @@ header {
     color: @white;
 }
 
-.pr-main-news-list li {
+.pr-main-spot-news-box ul > li {
+    color: darken(@grayLighter, 40%);
+}
+
+.pr-main-news-list {
+    clear: both;
+}
+
+.pr-main-spot-news-box .pr-main-news-list li {
     border-bottom: 1px solid @grayLighter;
     margin-bottom: 5px;
     padding-bottom: 5px;
@@ -247,8 +267,28 @@ header {
     }
 }
 
+.pr-main-news-list-spot li {
+    float: left;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.pr-main-news-list-spot li:first-child {
+    margin-left: 0px;
+}
+
+
 .pr-home-page-gallery > .span3 {
     width: 150px;
+}
+
+.pr-home-page-gallery > .span4 {
+    width: 184px;
+}
+
+.pr-main-inline-gallery > img {
+    width: 93px;
+    margin: 10px 0px 0px 10px;
 }
 
 /***************** FOOTER ************************************/
@@ -256,6 +296,36 @@ header {
 .footer {
     /*background: transparent url("../../layout/background/main_background.gif") repeat;*/
     background-color: @grayDark;
+}
+
+.pr-footer-menu-ul {
+    float: left;
+    width: 156px;
+    margin: 10px !important;
+}
+
+.pr-footer-menu-ul > li > a {
+    display: block;
+    border-bottom: 1px solid @gray;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    color: @grayLight;
+    &:hover {
+        color: @linkColor;
+        text-decoration: none;
+    }
+}
+
+.bottom_menu_cell {
+    border-bottom: 1px solid @red;
+    color: @white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+
+.rowFiveCopyright {
+    color: @grayLight;
 }
 
 /***************** COUNTDOWN CSS ************************************/
