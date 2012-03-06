@@ -109,13 +109,37 @@ body {
 .pr-gray {
   background-color: #555555;
 }
+.pr-bg-black {
+  background-color: #000000;
+}
+.pr-bg-pink {
+  background-color: #c3325f;
+}
+.pr-bg-blue {
+  background-color: #049cdb;
+}
+.pr-bg-gray {
+  background-color: #555555;
+}
+.pr-bg-infoText {
+  background-color: #3a87ad;
+}
+.pr-bg-warningText {
+  background-color: #c09853;
+}
+.pr-bg-red {
+  background-color: #9d261d;
+}
+.pr-bg-successText {
+  background-color: #468847;
+}
 /***************** HEADER ************************************/
 header {
   background-color: #000000;
   height: 140px;
   margin-bottom: 1px;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  /*.opacity(80);*/
+
 }
 .nav {
   margin-top: 10px;
@@ -185,7 +209,8 @@ header {
   padding: 10px;
 }
 .pr-main-spot-news-box-header {
-  background-color: #000;
+  /*background-color: #000;*/
+
   height: 25px;
   margin: 0px;
   color: #ffffff;
@@ -277,6 +302,10 @@ header {
 .rowFiveCopyright {
   color: #999999;
 }
+.rowFivePartner img {
+  width: 100px;
+  margin-right: 20px;
+}
 /***************** COUNTDOWN CSS ************************************/
 #t7_timer {
   width: 206px;
@@ -289,7 +318,7 @@ header {
   background-image: url('../images/Countdown-over.png');
   background-repeat: no-repeat;
   position: absolute;
-  /*z-index: 700;*/
+  /*z-index: 99;*/
 
   top: 0px;
   left: 1px;
