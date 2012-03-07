@@ -1,0 +1,479 @@
+@import "variables.less";
+@import "mixins.less";
+
+@baseLineHeight: 10px;
+
+body {
+  padding-top: 41px;
+  background: transparent url("../../layout/background/main_background-picture6.jpg") center top no-repeat;
+}
+
+#pr-main {
+    background: transparent url("../../layout/background/main_background.gif") repeat;
+}
+
+// pr included css
+
+/***************** COMMON ************************************/
+
+.row-margin-bottom {
+    margin-bottom: @baseLineHeight;
+}
+
+.row-margin-top {
+    margin-top: @baseLineHeight;
+}
+
+.row-margin-left {
+    margin-left: @baseLineHeight;
+}
+
+.row-margin-right {
+    margin-right: @baseLineHeight;
+}
+
+.row-margin-bottom-xl {
+    margin-bottom: @baseLineHeight *2;
+}
+
+.row-margin-top-xl {
+    margin-top: @baseLineHeight *2;
+}
+
+.row-margin-left-xl {
+    margin-left: @baseLineHeight *2;
+}
+
+.row-margin-right-xl {
+    margin-right: @baseLineHeight *2;
+}
+
+.row-padding-top {
+    padding-top: @baseLineHeight;
+}
+
+.row-padding-bottom {
+    padding-bottom: @baseLineHeight;
+}
+
+.row-padding-left {
+    padding-left: @baseLineHeight;
+}
+
+.row-padding-right {
+    padding-right: @baseLineHeight;
+}
+
+.row-padding-top-xl {
+    padding-top: @baseLineHeight *2;
+}
+
+.row-padding-bottom-xl {
+    padding-bottom: @baseLineHeight *2;
+}
+
+.row-padding-left-xl {
+    padding-left: @baseLineHeight *2;
+}
+
+.row-padding-right-xl {
+    padding-right: @baseLineHeight *2;
+}
+
+.pr-text-align-right {
+    text-align: right;
+}
+
+.pr-title-row {
+    background-color: @black;
+    padding: 4px 10px;
+    color: @white;
+    
+}
+
+.pr-gradient {
+    #gradient > .vertical(@white, darken(@grayLighter, 20%));
+}
+
+.pr-gradient-white {
+    #gradient > .vertical(@white, darken(@white, 20%));
+}
+
+
+.pr-banner-300 {
+    background-color: #f00;
+    height: 250px;
+    width: 300px;
+    margin-left: 5px; //Ana sayfa için
+}
+
+.pr-grayDarker {
+    background-color: @grayDarker;
+}
+
+.pr-grayDark {
+    background-color: @grayDark;
+}
+
+.pr-gray {
+    background-color: @gray;
+}
+
+.pr-bg-black {
+    background-color: @black;
+}
+
+.pr-bg-pink {
+    background-color: @pink;
+}
+
+.pr-bg-blue {
+    background-color: @blue;
+}
+
+.pr-bg-gray {
+    background-color: @gray;
+}
+
+.pr-bg-infoText {
+    background-color: @infoText;
+}
+
+.pr-bg-warningText {
+    background-color: @warningText;
+}
+
+.pr-bg-red {
+    background-color: @red;
+}
+
+.pr-bg-successText {
+    background-color: @successText;
+}
+
+/***************** HEADER ************************************/
+
+header {
+    background-color: @black;
+    height: 140px;
+    margin-bottom: 1px; 
+    /*.opacity(80);*/
+}
+
+.nav {
+  margin-top: @baseLineHeight;
+  margin-bottom: @baseLineHeight;
+}
+
+#pr-menu {
+    background-color: @black;
+    .opacity(90);
+    /*margin-bottom: @baseLineHeight *2;*/
+    margin-bottom: 1px;
+}
+
+#pr-race-info {
+    
+}
+
+#pr-race-info > .container{
+    background-color: @black;
+    height: 106px;
+    font-size: @baseFontSize;
+}
+
+#pr-race-info {
+    [class*="span"] {
+        /*background-color: @black;*/
+    }
+}
+
+#pr-race-info .pr-race-info-left , #pr-race-info .pr-race-info-right {
+    margin: 10px 10px 0px 10px;
+    color: @white;
+}
+
+#pr-race-info .pr-race-info-left{
+    margin-right: 0px;
+}
+
+#pr-race-info .pr-race-info-left > ul {
+    margin: 0px;
+    font-size: 12px;
+}
+
+/***************** HIGHLIGHTS ************************************/
+
+#pr-highlights {
+    
+}
+
+#pr-highlights h3 {
+    background-color: @black;
+    border-top: 1px solid @gray;
+    padding: 4px 10px;
+    color: @white;
+}
+
+#pr-highlights .container{
+    background-color: @white;
+    height: 465px;
+}
+
+.pr-higlights-area {
+    margin-left: 10px;
+    margin-right: 10px;
+    background: transparent url('../../layout/background/highlight_background.gif') repeat-x;
+}
+
+.pr-higlights-pictures {
+    width: 580px;
+}
+
+.pr-highlights-news-list li > a {
+    color: @white;
+    font-size: 14px;
+    &:hover {
+        color: @yellow;
+        text-decoration: none;
+    }
+}
+
+.pr-highlights-news-list li {
+    margin-bottom: 6px;
+}
+
+/***************** SECTION pr-main ***************************/
+
+.pr-main-spot-news-box {
+    background-color: @white;
+    padding: 10px;
+}
+
+.pr-main-spot-news-box-header {
+    /*background-color: #000;*/
+    height: 25px;
+    margin: 0px;
+    color: @white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.pr-main-spot-news-box h5 {
+    color: @pink;
+    border-bottom: 1px solid;
+    border-color: darken(@grayLighter, 10%);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pr-main-spot-news-box h5 > span {
+    background: transparent url("../../layout/icon/comment_box_small.png") no-repeat;
+    width: 23px;
+    height: 23px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    color: @white;
+}
+
+.pr-main-spot-news-box ul > li {
+    color: darken(@grayLighter, 40%);
+}
+
+.pr-main-news-list {
+    clear: both;
+}
+
+.pr-main-spot-news-box .pr-main-news-list li {
+    border-bottom: 1px solid @grayLighter;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    color: @pink;
+    font-size: 10px;
+    & > a {
+        font-size: 13px;
+    }
+}
+
+.pr-main-news-list-spot li {
+    float: left;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.pr-main-news-list-spot li:first-child {
+    margin-left: 0px;
+}
+
+
+.pr-home-page-gallery > .span3 {
+    width: 150px;
+}
+
+.pr-home-page-gallery > .span4 {
+    width: 184px;
+}
+
+.pr-main-inline-gallery > img {
+    width: 93px;
+    margin: 10px 0px 0px 10px;
+}
+
+/***************** FOOTER ************************************/
+
+.footer {
+    /*background: transparent url("../../layout/background/main_background.gif") repeat;*/
+    background-color: @grayDark;
+}
+
+.pr-footer-menu-ul {
+    float: left;
+    width: 156px;
+    margin: 10px !important;
+}
+
+.pr-footer-menu-ul > li > a {
+    display: block;
+    border-bottom: 1px solid @gray;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    color: @grayLight;
+    &:hover {
+        color: @linkColor;
+        text-decoration: none;
+    }
+}
+
+.bottom_menu_cell {
+    border-bottom: 1px solid @red;
+    color: @white;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+
+.rowFiveCopyright {
+    color: @grayLight;
+}
+
+.rowFivePartner img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+/***************** COUNTDOWN CSS ************************************/
+
+#t7_timer { 
+	width: 206px; 
+	height: 55px; 
+	position: relative;
+}
+
+#t7_timer_over { 
+	width: 206px; 
+	height: 55px; 
+	background-image: url('../images/Countdown-over.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	/*z-index: 99;*/
+	top: 0px;
+	left: 1px;
+	margin: 0px;
+	padding: : 0px;
+}
+
+
+#t7_vals {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_numbs {
+	font-size: 28px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	text-align: left;
+	color: #c5c5c5;
+}
+
+#t7_y , #t7_d , #t7_h , #t7_m , #t7_s {
+	background-image: url(../images/Countdown2.png);
+	background-repeat: no-repeat;
+	float:left;
+	width: 48px;
+	height:30px;
+	padding: 7px 0px 0px 3px;
+	margin: 1px;
+	letter-spacing: 7px;
+}
+#t7_d {
+	background-image: url(../images/Countdown2.png);
+}
+#t7_h {
+	background-image: url(../images/Countdown2.png);
+}
+#t7_m {
+	background-image: url(../images/Countdown2.png);
+	width: 47px;
+}
+#t7_s {
+	background-image: url(../images/Countdown2-nc.png);
+	width: 42px;
+}
+
+#t7_labels {
+	width: 100%;
+	clear:both;
+	margin: 0px auto;
+}
+
+.t7_labs {
+	font-size: 10px;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	color: #c5c5c5;
+}
+#t7_yl , #t7_dl , #t7_hl , #t7_ml , #t7_sl  {
+	float:left;
+	width: 51px;
+	height:15px;
+	padding:0px;
+	margin: 0px;
+}
+
+#defaultCountdown { margin-left: 0px; text-align: center;}
+
+/***************** HIGHLIGHTS SLIDER ************************************/
+
+.panel-overlay h2 , .panel-overlay p{
+	margin: .5em 0;
+}
+
+.panel-overlay h2 {
+	font-size: 31px;
+	font-weight: normal;
+	color: rgb(117, 117, 117);
+	letter-spacing: -1px;
+	line-height: 110%;
+	margin: 0pt;
+	text-transform: lowercase;
+	font-family: 'arial black';
+}
+
+.panel a
+{
+	text-decoration: none;
+}
+
+.panel-overlay p {
+	line-height: 1.3em;
+	font-size: 14px;
+	background-color: #f00;
+}
+
+// pr included css
